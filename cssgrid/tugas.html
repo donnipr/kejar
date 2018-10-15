@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <style>
+        .wrapper {
+            max-width: 500px;
+            margin: 50px auto;
+        }
+
+        hr {
+            border: solid 1px beige;
+        }
+
+        p {
+            color: gray;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 100px 100px 100px;
+            grid-gap: 4px;
+            color: white;
+        }
+
+        .satu,
+        .dua,
+        .tiga,
+        .empat,
+        .lima,
+        .enam {
+
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            padding: 30px;
+
+        }
+
+        .satu {
+            background: #8FFFB8;
+            grid-column: 1/3;
+
+        }
+
+        .dua {
+            background: #FFEE74;
+            grid-column: 3/3;
+
+        }
+
+        .tiga {
+            background:#00FFFD;
+            grid-column-start: 1;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            padding-top:80px;
+        }
+
+        .empat {
+            background: #F1A2FB;
+            grid-column: 2/4;
+        }
+
+        .lima {
+            background: #50FFD0;
+            grid-column: 2/3;
+        }
+
+        .enam {
+            background: #FF8D55;
+            grid-column: 3/4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <p>Tugas: (opsional)
+            Buat Figur berikut ini dengan menggunakan css-grid.</p>
+        <img src="tugas.png" />
+        <hr />
+
+        <div class="container">
+            <div class='satu'>1</div>
+            <div class='dua'>2</div>
+            <div class='tiga'>3</div>
+            <div class='empat'>4</div>
+            <div class='lima'>5</div>
+            <div class='enam'>6</div>
+        </div>
+
+    </div>
+</body>
+
+</html>

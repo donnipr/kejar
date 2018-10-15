@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+[class*="fontelico-"]:before {
+  font-family: 'fontelico', sans-serif;
+}
+
+
+[class*="zocial-"]:before {
+  color: black;
+  display: inline-block;
+  font-family: 'zocial', sans-serif;
+  width: 2em;
+}
+
+a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+p{
+  font-size: .9em;
+}
+
+a:hover [class*="zocial-"]:before {
+  color: #4a90e2;
+}
+
+div#social a {
+  margin: 0 2em 0 0;
+}
+
+div#social a:last-of-type {
+  margin: 0;
+}
+
+
+div#logo {
+  float: left;
+  margin-right: 5px;
+}
+
+#logo svg {
+  width: 45px;
+  height: 45px;
+}
+
+article {
+  margin: 0 auto;
+  max-width: 55em;
+  border-bottom: 1px solid #ddd;
+}
+
+body {
+  background: #FAFAFA;
+  font-family: 'Open Sans', sans-serif;
+  color: #4B4B4B;
+  font-size: 1em;
+}
+
+div#social {
+  line-height: 2em;
+}
+
+#social a {
+  float: left;
+}
+
+figcaption {
+  color: #bb021e;
+  padding: 1em 0;
+}
+
+figure {
+  margin: 1em 0 1em 0;
+  float: left;
+}
+
+footer {
+  margin: 0 auto 35px auto;
+  width: 800px;
+  padding: 20px 0 20px;
+}
+
+header {
+  margin: 0 auto;
+  width: 55em;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0 auto 1em auto;
+  width: 800px;
+}
+
+img {
+  max-width: 100%;
+}
+
+#logo svg {
+  width: 30px;
+  /* height: 45px; */
+  /* background: grey; */
+  color: white;
+  border-color: red;
+  padding: 0 5px;
+}
+
+header:hover svg#logo {
+  fill: #3d85c6;
+  -webkit-filter: drop-shadow(3px 3px 3px #ddd);
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+
+  .section
+  {
+    height: 650px;
+  }
+
+  .container {
+    display: flex;
+    margin: 30px 0px;
+    /* or inline-flex */
+  }
+
+  .container .item {
+    flex-flow: row wrap;
+
+    padding: 5px;
+    width: 600px;
+    margin-top: 10px;
+    margin:0 10px;
+  }
+
+
+  .item h2{
+    padding: 0px;
+    margin: 0px;
+    font-size: 2em;
+    line-height: 1em;
+  }
+
+
+
+  .head-content{
+    position: relative;
+    top: -252px;
+    padding: 15px;
+    /* background: red; */
+    color: white;
+  }
+
+}

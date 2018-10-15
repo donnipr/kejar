@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Kejar JOGJA MWS </title>
+  <link rel='manifest' href='manifest.json'>
+  <meta name='mobile-web-app-capable' content='yes'>
+  <meta name="Description" content="Latihan Mobile Web Specialist (MWS)">
+  <meta name="theme-color" content="#2196F3"/>
+  <meta name='apple-mobile-web-app-capable' content='yes'>
+  <meta name='application-name' content='MWS JOGJA'>
+  <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+  <meta name='apple-mobile-web-app-title' content='MWS JOGJA'>
+  <link rel='icon' sizes='192x192' href='/images/logo/Icon-192.png'>
+  <link rel='apple-touch-icon' href='/images/logo/Icon-192.png'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css"> -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+  <link rel="stylesheet" type="text/css" href="final.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <img class="header__logo" src="images/logo.png" alt="MWS Kejar Regional Jogja">
+      <h1 class="header__title">
+        MWSJOGJA</h1>
+      <a id="menu" class="header__menu">
+       <img src="images/bar-512.png" alt="Menu Utama" width="32px" />
+      </a>
+    </div>
+  </header>
+
+  <nav id="drawer" class="nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="project1/index.html">Kalkulator.JS</a></li>
+      <li class="nav__item"><a href="project2/index.html">Tugas 2</a></li>
+      <li class="nav__item"><a href="cssgrid/index.html">CSS GRID</a></li>
+      <li class="nav__item"><a href="#">Tugas 4</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="content">
+      <section class="hero">
+        <article class="description">
+          <h2>Semangat Belajar!</h2>
+          <p>Website ini merupakan salah satu contoh saja dari sekian banyak contoh contoh yang lain tentang Mobile Web.
+            website ini merupakan dasar dan masih memerlukan pembenahan disana sini. silahkan hubungi rindrasakti86@gmail.com untuk mendapatkan source <code></code>
+          </p>
+        </article>
+      </section>
+
+      <section class="news top-news">
+        <h2 class="news__title">Top news <a href="#" class="news__more">+ more</a></h2>
+        <ul>
+          <li class="top-news__item">
+            <a href="#">Membuat Offline.</a>
+          </li>
+          <li class="top-news__item">
+            <a href="mws-restaurant-stage-1/index.html">mws-restaurant-stage-1</a>
+          </li>
+          <li class="top-news__item">
+            <a href="cssgrid/tugas.html">Tugas CSS GRID</a>
+          </li>
+          <li class="top-news__item">
+            <a href="#">Something Awesome Will be soon</a>
+          </li>
+        </ul>
+      </section>
+
+    </section>
+    <footer>
+      <ul>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Follow us on Twitter</a></li>
+        <li><a href="#">RSS</a></li>
+      </ul>
+    </footer>
+  </main>
+  <script>
+    /*
+     * Open the drawer when the menu ison is clicked.
+     */
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('Service Worker registered at ', reg.scope))
+        .catch(error => console.log('Registration failed:', error))
+    }
+    else {
+      console.log('Service-Worker not supported in this Browser');
+    }
+    var menu = document.querySelector('#menu');
+    var main = document.querySelector('main');
+    var drawer = document.querySelector('.nav');
+
+    menu.addEventListener('click', function (e) {
+      drawer.classList.toggle('open');
+      e.stopPropagation();
+    });
+    main.addEventListener('click', function () {
+      drawer.classList.remove('open');
+    });
+
+  </script>
+</body>
+
+</html>

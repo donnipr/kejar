@@ -1,0 +1,32 @@
+body {
+    background: #580077;
+    color: white;
+}
+
+a {
+    color: #02b3e4;
+    text-decoration: none;
+}
+
+.container {
+    min-width: 300px;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.footer
+{
+    text-align: center;
+}
+.container h1{
+    text-align: center;
+}
+.text-center
+{
+    text-align: center;
+}
+
+#mapid, #mapid2, #mapid3 {
+    height: 300px;
+
+}
